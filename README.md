@@ -1,13 +1,6 @@
----
-title: LinkedInpost
-emoji: 🐠
-colorFrom: red
-colorTo: gray
-sdk: streamlit
-sdk_version: 1.32.2
-app_file: app.py
-pinned: false
-license: apache-2.0
----
+app.py - FastAPI
+main.py streamlit app
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+1. uvicorn app:app --reload
+2. streamlit run main.py
