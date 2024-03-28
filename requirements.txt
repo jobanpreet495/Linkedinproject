@@ -1,5 +1,0 @@
-langchain_community
-python-dotenv
-langchain
-fastapi
-python-multipart
