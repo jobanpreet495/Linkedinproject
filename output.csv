@@ -1,0 +1,267 @@
+Link,Paraphrased Post,Keywords,Take Aways,Highlights
+https://www.linkedin.com/posts/sahibpreetsinghh_hey-llm-peeps-new-day-sharing-new-learning-activity-7177861772039651328-BMBV?utm_source=share&utm_medium=member_desktop,"Hey LLM Peeps,
+
+New Day, Sharing New Learning.
+
+While creating a RAG (Red, Amber, Green) report, there are two main problems:
+
+1. How do you break down user queries into smaller parts and answer the questions for each sub-query using RAG?
+2. What is the best strategy for Retrieval?
+
+Let's dive deeper.
+
+Q- What is Chunking?
+
+Chunking is the process of splitting a document into smaller segments and creating embeddings for each segment. This allows the language model to provide the most appropriate answer from the large document.
+
+🧩 Semantic Chunking
+•🔍 Decoding Semantic Chunking for Text Analysis 🧩
+
+🔹 Define Window Size: Choose a window size (e.g., W = 3) to divide the document into overlapping chunks of sentences.
+🔹 Calculate Group Embeddings: Generate embeddings for each chunk to capture its semantic essence.
+🔹 Measure Semantic Similarity: Assess the similarity between consecutive chunks using semantic similarity scores.
+🔹 Determine Split Points: Use strategies like percentile-based or standard deviation-based approaches to identify optimal split points within the document.
+🔹 Execute Document Splitting: Segment the document into meaningful chunks based on the identified criteria.
+
+Now we have a better understanding of Semantic Chunking.
+
+What is Retrieval and which strategy should we use?
+
+Retrieval is the process of fetching chunks of text that serve as the most important answer for a user query. This is usually done from a Vector DB, but it can also be from an Index on a Local Storage. For this work, I am using Raptor as a Retrieval Strategy (I can't explain this in this post due to LinkedIn's word limit).
+
+To learn more, check out my post on my profile.
+
+In this Quick Tutorial, I have combined Semantic Chunking and Raptor for Retrieval, and the results are promising. I tested this combination for my personal project, and it worked like a charm. Here's a snippet:
+
+[Snippet]
+
+Before I wrap up, I have a few questions:
+
+1. If I use Raptor Retriever without a Vector Store, only with an Index and using VectorStoreIndex from LlamaIndex in ""tree_traversal"" mode, it takes too much time and no answer is returned. If Ravi Theja Desetty, Logan Markewich, or anyone else can help, that would be awesome.
+2. Another question is - I still don't understand the purpose of having a SimpleVectorStore if it doesn't have properties like vector store. Most of the basic operations available in Chroma, Weaviate, Pinecone, or LanceDB are not present in this class. Please explain. I might be looking at it from a different perspective.
+
+Tagging friends and mentors - Vetrivel PS, Philip Vollet, VASANTH P, Harpreet Sahota, Mahesh Deshwal, Hetarth Chopra, Harbhajan Singh, Ravi Tanwar, Pramodith B., and Navdeep Singh.
+
+Link to the code - [Link]
+
+","Semantic Chunking,Retrieval Strategy,RAG report","Chunking is the process of splitting a document into smaller segments and creating embeddings for each segment,Retrieval is the process of fetching chunks of text that serve as the most important answer for a user query,Combining Semantic Chunking and Raptor for Retrieval can yield promising results","Define Window Size: Choose a window size (e.g., W = 3) to divide the document into overlapping chunks of sentences,Measure Semantic Similarity: Assess the similarity between consecutive chunks using semantic similarity scores,Segment the document into meaningful chunks based on the identified criteria"
+https://www.linkedin.com/posts/sahibpreetsinghh_hey-%3F%3F%3F-%3F%3F%3F%3F-exciting-times-ahead-activity-7176023810989568000-BNXv?utm_source=share&utm_medium=member_desktop,"Hey, LL.M Fans! Exciting Times Ahead! 🚀
+
+Step into the realm where an LL.M steps up to fulfill the role of a Judge - not just any judge, but a judge for Answers crafted by fellow LL.Ms. 💼
+
+Disclaimer - This is exactly what me and my team (Jayita Bhattacharyya and Ameena Ansari) developed for a hackathon organized by traversaal.ai and Qdrant)
+
+In this setup, having a Human Annotator onboard is quite expensive. So why not let LL.Ms take charge as judges?
+
+But what challenges arise when assessing LL.M answers? 🤔
+
+1. Hallucinated and factually incorrect responses.
+
+2. Repetitive loops of the same information.
+
+3. Incoherence.
+
+How can we overcome these hurdles? 🛠️
+
+1. Engage N annotators from M humans (N being a modest number like 30-50, with M being just 2-3).
+
+2. Create a precise prompt that outlines the judgment criteria:
+
+    2.1 Clearly state the key points for assessment.
+
+    2.2 Establish a concise scale (preferably 1-5) to guide the LL.M's evaluation process. This scale can later be linearly scaled from 1-100, but initially, simplicity is key for the LL.M's tasks.
+
+    2.3 Explain the significance of each point on the scale (e.g., what distinguishes a 1 from a 5).
+
+Key Considerations: 📌
+
+1. 🎯 Aim for improvement, but perfection is not achievable.
+
+2. 🧭 Provide a reference point for guidance.
+
+3. 📚 Include a few-shot examples as they aid comprehension. 😊
+
+First of all, thanks to Aymeric Roucher for your recent post, which led me to read this blog - https://lnkd.in/g5RfJanY
+
+Tagging friends and Mentors - Vetrivel PS, VASANTH P, Mahesh Deshwal, Ravi Tanwar, Abhishek Das, Harbhajan Singh, Basant Singh 🚀, Abhishek Thakur, Philipp Schmid, and Sanyam Bhutani for always motivating with your AI content.
+
+Link to the implementation repository - https://lnkd.in/ezQcmgda
+
+It's truly an enjoyable read! 🤗🌸","LL.M,judge,answers","LL.Ms can act as judges for answers,Challenges in assessing LL.M answers include hallucinated and factually incorrect responses, repetitive loops, and incoherence,Ways to overcome hurdles include engaging multiple annotators, creating a precise prompt with judgment criteria and a scale, and providing key considerations for improvement","LL.Ms can fulfill the role of a judge for answers crafted by fellow LL.Ms,Engaging N annotators from M humans can help in assessing LL.M answers,Key considerations include aiming for improvement, providing a reference point, and including examples for comprehension"
+https://www.linkedin.com/posts/sahibpreetsinghh_%3F%3F%3F%3F-is-learning-%3F%3F-%3F%3F%3F%3F%3F-%3F-activity-7173898136111841282-F8sV?utm_source=share&utm_medium=member_desktop,"𝗟𝗔𝗠𝗔, a Tree-based technique, is currently being studied in the field of machine learning. I recently worked on a RAG application and came across RAPTOR, a new advanced chunking technique, through my LinkedIn feed.
+
+Let me explain the process to you:
+1. Start with a large document and divide it into approximately 50 tokens.
+2. Utilize 𝗨𝗠𝗔𝗣 to reduce the dimensions of these tokens. Once the dimensions are reduced, a Gaussian Mixture model is applied to cluster similar chunks together.
+3. All the chunks within a cluster are then summarized by an LLM (Language Model) to create a new chunk.
+4. Repeat steps 1-3 until no new clusters are formed.
+
+However, the final result may not be exactly what we are looking for. Throughout this process, chunks are combined at different levels of granularity, making them unique and suitable for specific application needs.
+
+I have a couple of suggestions:
+1. Instead of using 𝗨𝗠𝗔𝗣 algorithms like 𝗧𝗦𝗡𝗘 or PCA, consider trying direct methods.
+2. Provide LLMs with a longer context window, allowing them to receive chunks at different levels. Then, let the LLM determine the best level based on the user's question from the RAG application.
+
+Pic credits - Leonardo.Ai
+Tagging friends and mentors - VASANTH P, Vetrivel PS, Navdeep Singh, Navdeep Kaur, Mahesh Deshwal, Sanyam Bhutani, Basant Singh, Aman Chadha, Ravi Tanwar, Harpreet Sahota, F. Firat Gonen, PhD
+Special thanks to Pramodith B. for your post, bro!","LLM,UMAP,RAG application","Tree-based technique,Advanced chunking technique,Utilizing UMAP to reduce dimensions","Study of LAM,Working on RAG application,Discovering RAPTOR through LinkedIn feed"
+https://www.linkedin.com/posts/jobanpreet-singh-392581207_asr-whisper-speechrecognition-activity-7172803455718158336-MC-j?utm_source=share&utm_medium=member_desktop,"🎙️🔍 Exploring the Fundamentals of State-of-the-Art ASR Model: Whisper! 📝
+
+Hey LinkedIn Fam! 👋
+
+Today, let's explore the basics of the cutting-edge ASR model, Whisper, as described in the informative paper I've been studying. First, let's talk about the influential predecessor: Wav2Vec2.0!
+
+🔍 Wav2Vec2.0: 
+1. It underwent unsupervised training using over 1M hours of data.
+2. The speech data used was unlabeled. 
+3. Wav2Vec2 learns high-quality speech representation through an encoder, but it lacks a decoder mapping for these representations, which requires additional fine-tuning for speech recognition.
+4. Wav2Vec2 requires supervised fine-tuning of the decoder.
+
+🌟 Whisper: 
+1. Whisper is trained on 680,000 hours of labeled data. The dataset was obtained by crawling the internet. Various techniques were employed to handle the dataset, such as removing machine-generated data (ASR), ensuring the transcript language matches the spoken language, and eliminating duplication.
+2. Audio files are divided into 30-second segments. 
+3. The model architecture is an encoder-decoder transformer. Audio samples are resampled to 16kHz and converted to log-magnitude Mel spectrogram representations, computed using a 25-millisecond window with a 10-millisecond stride.
+
+🔊 Log-Mel Spectrograms
+Ever wondered about log-mel spectrograms? Let's demystify:
+- Spectrogram: A 3-D representation of sound, displaying frequency (Y-axis) over time (X-axis).
+
+- Log-mel Spectrogram: 
+➡️ It is similar to a spectrogram, but the frequency scale is logarithmic, whereas in a spectrogram, it is linear. This logarithmic scale is also known as the mel-scale.
+➡️ In the logarithmic scale, frequency changes exponentially. When frequency changes logarithmically, the human auditory system tends to perceive those changes more uniformly compared to linear changes.
+
+▶️ The log-mel spectrogram is passed through two 1-D convolutional layers, and the Gaussian error linear unit (GELU) activation function is applied. 
+▶️ Sinusoidal positional encoding is applied before being sent to the transformer encoder blocks. 
+▶️ Learned positional encoding: Embeddings are trained or the model is allowed to dynamically learn positional information during training. 
+
+💡 What's Next?
+Intrigued? Stay tuned for my next post, where we'll delve into the details of fine-tuning Whisper. Your suggestions and insights are invaluable, so please share them in the comment box below! 💬
+
+Let's keep the conversation going! 🚀 #ASR #Whisper #SpeechRecognition #AI #TechTalks","ASR,Whisper,Wav2Vec2.0","Whisper trained on 680,000 hours of labeled data,Wav2Vec2.0 underwent unsupervised training using over 1M hours of data,Log-mel spectrograms explained","Whisper model architecture is an encoder-decoder transformer,Log-mel spectrogram passed through two 1-D convolutional layers,Wav2Vec2.0 lacks a decoder mapping for speech representations"
+https://www.linkedin.com/posts/jobanpreet-singh-392581207_transliteration-a-hugging-face-space-by-activity-7117509460616445952-FsJf?utm_source=share&utm_medium=member_desktop,"Completed my Transliteration Project - English to Punjabi 👉  ਇੰਗਲਿਸ਼ ਟੂ ਪੰਜਾਬੀ
+
+Dear LinkedIn community,
+I am thrilled to announce the successful completion of my recent project - Transliteration from English to Punjabi.
+
+Using an advanced encoder-decoder architecture with two LSTM units, I have developed a system that effortlessly converts English words into their Punjabi equivalents.
+
+📊 Quality Assessment:
+To ensure the accuracy of this transliteration system, I have utilized the Word Accuracy metric. This metric calculates the percentage of correctly transliterated words out of the total number of test words, providing a reliable measure of the system's accuracy.
+
+📈 Word Accuracy Formula:
+Accuracy = (Correctly Transliterated Words / Total Test Words) * 100
+Where:
+Correctly Transliterated Words (C) = Total number of accurately converted words
+Total Test Words (N) = Total number of words tested
+
+🙏 Acknowledgments:
+I would like to express my sincere gratitude to AI4Bhārat for providing the invaluable dataset of English words along with their corresponding Punjabi transliterations. This dataset played a crucial role in the success of my project.
+
+🚀 Front-End Development:
+The project's user-friendly front-end has been developed using Gradio.
+
+🌐 Accessibility:
+I have made this project accessible to everyone through Huggingface Spaces. You can experience it in real-time by visiting the following link:
+https://lnkd.in/dJngxES9
+#Transliteration #Huggingface #AI4BHARAT","Transliteration,English to Punjabi,LSTM units","Successful completion of Transliteration Project - English to Punjabi,Utilization of advanced encoder-decoder architecture with two LSTM units,Quality assessment using Word Accuracy metric","Completed Transliteration Project - English to Punjabi,Utilized advanced encoder-decoder architecture with two LSTM units,Quality assessment using Word Accuracy metric"
+https://www.linkedin.com/posts/mohamedsalama1_ai-reinforcementlearning-innovation-activity-7178792892411375616-bznm?utm_source=share&utm_medium=member_desktop,"Introducing ReFT: A Revolutionary Approach to Enhancing LLMs' Learning Efficiency 🧠 ♻
+
+A groundbreaking technique called Reinforced Fine-Tuning (ReFT) has been developed by researchers to improve the learning efficiency of Large Language Models (LLMs). Unlike traditional methods, ReFT leverages reinforcement learning to evaluate different reasoning paths, resulting in significant advancements without the need for additional training data. 🔍💡
+
+ReFT works by initially providing LLMs with a warm-up phase using SFT (Standard Fine-Tuning), followed by on-the-fly learning where various reasoning paths are explored. The best paths, determined by the correctness of the answers, are then reinforced. In experiments, this approach has shown substantial improvements compared to using only SFT. Furthermore, there is potential for even greater enhancements through inference-time strategies.
+
+What makes ReFT particularly impressive is that it achieves these results without requiring any increase in training data. The focus is on smarter learning rather than relying on more data. While concerns about reward hacking are common, initial results indicate that ReFT is robust and holds great promise!
+
+For more information about this transformative approach, please visit: https://lnkd.in/d254BwaF
+#AI #ReinforcementLearning #Innovation #LLMs","ReFT,LLMs,Reinforced Fine-Tuning","ReFT is a revolutionary approach to enhancing LLMs' learning efficiency,ReFT leverages reinforcement learning to evaluate different reasoning paths,ReFT works by providing LLMs with a warm-up phase using SFT followed by on-the-fly learning","ReFT is a groundbreaking technique for improving the learning efficiency of LLMs,ReFT explores various reasoning paths and reinforces the best ones based on correctness of answers,ReFT shows substantial improvements compared to using only SFT"
+https://www.linkedin.com/posts/bavalpreet-singh_200205202v1pdf-activity-7166186517621628928-1JLm?utm_source=share&utm_medium=member_desktop,"Google recently unveiled Gemma, an innovative series of lightweight models that utilize the same intelligent technology found in the Gemini models.
+
+Here are the key features of Gemma:
+
+Model Options: Gemma is available in two versions: 2B and 7B. Each version includes an instruction format and a basic format, devoid of extravagant multimedia elements.
+
+Suitable for Business: These models are perfectly suitable for business purposes, enabling companies to accomplish more with them.
+
+High Capacity: Gemma has the ability to process a substantial amount of information simultaneously, thanks to its 8192 token context window.
+
+Outstanding Performance: The 7B model surpasses other similar models, such as Mistral AI 7B and LLaMa 2, in Human Eval and MMLU tests, achieving a remarkable score of 64.56 on MMLU.
+
+The Gemma architecture incorporates several notable enhancements compared to traditional transformer models. These advancements include:
+
+1. Enhanced Attention Mechanisms and Positional Encoding: Multi-Query Attention and RoPE are employed to enhance attention mechanisms and positional encoding, facilitating more efficient learning.
+
+2. Dynamic Model Responses: GeGLU Activations replace the standard ReLU, resulting in more dynamic responses from the model.
+
+3. Improved Stability Across Layers: By implementing RMSNorm, Gemma utilizes normalization techniques to achieve better stability across its layers.
+
+And the best part? You can easily access Gemma on platforms like Huggingface, Kaggle, and VertexAI. It's readily available for you to start using!","Gemma,models,intelligent technology","Gemma available in 2B and 7B versions,Suitable for business purposes,High capacity for processing information","Gemma models utilize intelligent technology,Gemma has high capacity for processing information,Gemma 7B model outperforms others in tests"
+https://www.linkedin.com/posts/vasanthengineer4949_elonmusk-grokai-xai-activity-7176584570530611200-ALUP?utm_source=share&utm_medium=member_desktop,"𝗚𝗿𝗼𝗸 - 𝟭, the most recent 𝟯𝟭𝗕 𝗽𝗮𝗿𝗮𝗺𝗲𝘁𝗲𝗿 𝗠𝗢𝗘 𝗺𝗼𝗱𝗲l developed by X and Elon Musk, has been released. It incorporates 𝟴𝟲𝗕 of active parameters, utilizing both conventional and unconventional techniques in its architecture. I have provided a comprehensive analysis of these techniques and the accompanying code in the following video.
+
+Link: https://lnkd.in/dkJv2yt3
+
+Key Points:
+1. The model has 314B parameters, with 86B of them being active.
+2. It was trained using the JAX framework.
+3. The released model is a raw base pretrained model, not a finetuned one.
+4. It is released under Apache 2.0 License.
+5. The model is unsupervised in nature.
+6. Model weights can be found on Hugging Face.
+
+Despite having 314B parameters, the performance does not directly correlate with it in benchmarks, as I have extensively discussed in the video.
+
+In the attached image, I have included some important information about the architecture.
+
+Tagging some of my connections:
+Harpreet Sahota 🥑
+Vetrivel PS
+Sahibpreet Singh
+AbdulMajedRaja RS
+Krish Naik
+Ashish Patel 🇮🇳
+Arpit Singh
+Anshul Saxena, PhD
+SUNNY BHAVEEN CHANDRA
+Manish Sharma 📊
+Leandro von Werra
+Clem Delangue 🤗
+Thomas Wolf
+Lewis Tunstall
+Maxime Labonne
+Luis Serrano
+Omar Sanseviero
+Aladdin Persson
+Yannic Kilcher
+Umar Jamil
+
+#elonmusk #grokai #xai","Grok-1,Elon Musk,X","Model has 314B parameters with 86B active,Trained using JAX framework,Released model is raw base pretrained","Grok-1 released, developed by X and Elon Musk,Incorporates 86B of active parameters,Utilizes conventional and unconventional techniques in architecture"
+https://www.linkedin.com/posts/vasanthengineer4949_wanna-know-how-to-connect-your-llms-to-csv-activity-7175860156151332864-13Me?utm_source=share&utm_medium=member_desktop,"Wanna learn how to connect your LLMs to CSV as a Database? Check out this LinkedIn post: Mixtral Database Administrator: Chat with your Database. Here's the link: https://lnkd.in/gPiZqDJy
+
+In this video, I demonstrate how to use the Groq Inference Engine to run Mixtral from Mistral AI with a Streamlit Interface. To convert a CSV file to a SQL database, I utilize pandasql, and for formatting prompts, I use LangChain.
+
+Here are the steps:
+1. Convert the CSV file into a SQL schema.
+2. Take the user's question and provide it, along with the SQL schema, to Mistral.
+3. Mistral generates a SQL query.
+4. Apply the query to the created database using try-except.
+5. Integrate everything into a user interface for a better experience.
+
+You can find the code in the attached image. For a more detailed explanation and information on my experimentation with finetuning LLMs for SQL query generation, please visit the following link: https://lnkd.in/gPiZqDJy
+
+Tagging some of my connections: Harrison Chase, Vetrivel PS, Sahibpreet Singh, Ashish Patel 🇮🇳, Arpit Singh, Anshul Saxena, PhD, SUNNY BHAVEEN CHANDRA, Manish Sharma 📊, Krish Naik","LLMs,CSV,Database","Learn how to connect LLMs to CSV as a Database,Convert CSV file to SQL database,Utilize pandasql for SQL schema conversion","Demonstration of using Groq Inference Engine with Mixtral from Mistral AI,Steps for converting CSV file to SQL schema and generating SQL query,Code available in attached image"
+https://www.linkedin.com/posts/vasanthengineer4949_devin-going-take-your-jobs-devin-working-activity-7175500962533396480-FMw5?utm_source=share&utm_medium=member_desktop,"After the recent announcement of Cognition's groundbreaking Devin AI, there has been a lot of discussion about whether it will replace humans or not. However, before we can answer that question, it is crucial to understand how Devin AI actually works. In the following video, I have provided a detailed explanation of Devin AI's functionality:
+
+Title: Devin Going Take your Jobs?? | Devin Working Explained
+
+Link: https://lnkd.in/eCJMrq4G
+
+In this video, I have covered all aspects of Devin AI, addressing the following questions that you may have:
+
+1. What exactly is Devin AI?
+2. What makes Devin AI so impressive?
+3. What are the capabilities of Devin AI?
+4. Can Devin AI serve as a substitute for humans?
+5. Lastly, a comprehensive explanation of how Devin AI operates.
+
+I would love to hear your thoughts and opinions on this matter as well.
+
+Tagging some of my connections: Sahibpreet Singh, Vetrivel PS, Ashish Patel 🇮🇳, SUNNY BHAVEEN CHANDRA, Krish Naik, AbdulMajedRaja RS, Manish Sharma 📊","Devin AI,replace humans,Devin AI's functionality","Devin AI's groundbreaking technology,Understanding how Devin AI works,Detailed explanation of Devin AI's functionality","Announcement of Cognition's Devin AI,Discussion on whether Devin AI will replace humans,Comprehensive explanation of Devin AI's capabilities"
