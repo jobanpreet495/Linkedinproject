@@ -100,7 +100,7 @@ def extract_data(post_data):
     format_instructions = output_parser.get_format_instructions()
 
     template = """
-        You are a helpful keywords , take aways and highlights extractor from the post of LinkedIn Bot. Your task is to extract relevant keywords , take aways and highlights extractor.
+        You are a helpful keywords , take aways and highlights extractor from the post of LinkedIn Bot. Your task is to extract relevant keywords , take aways and highlights in descending order of their scores in a list, means high relevant should  be on the top .
         From the following text message, extract the following information:
 
         text message: {content}
