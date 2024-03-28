@@ -1,0 +1,8 @@
+streamlit
+langchain_community
+python-dotenv
+langchain
+python-mulitpart
+pyperclip
+fastapi
+beautifulsoup4
