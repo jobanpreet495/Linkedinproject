@@ -1,4 +1,4 @@
-Link,Paraphrased Post,Keywords,Take Aways,Highlights
+Link,Paraphrased Post,Keywords,Take Aways,Highlights,Groundtruth Keywords
 https://www.linkedin.com/posts/sahibpreetsinghh_hey-llm-peeps-new-day-sharing-new-learning-activity-7177861772039651328-BMBV?utm_source=share&utm_medium=member_desktop,"Hey LLM Peeps,
 
 New Day, Sharing New Learning.
@@ -44,7 +44,7 @@ Tagging friends and mentors - Vetrivel PS, Philip Vollet, VASANTH P, Harpreet Sa
 
 Link to the code - [Link]
 
-","Semantic Chunking,Retrieval Strategy,RAG report","Chunking is the process of splitting a document into smaller segments and creating embeddings for each segment,Retrieval is the process of fetching chunks of text that serve as the most important answer for a user query,Combining Semantic Chunking and Raptor for Retrieval can yield promising results","Define Window Size: Choose a window size (e.g., W = 3) to divide the document into overlapping chunks of sentences,Measure Semantic Similarity: Assess the similarity between consecutive chunks using semantic similarity scores,Segment the document into meaningful chunks based on the identified criteria"
+","Semantic Chunking,Retrieval Strategy,RAG report","Chunking is the process of splitting a document into smaller segments and creating embeddings for each segment,Retrieval is the process of fetching chunks of text that serve as the most important answer for a user query,Combining Semantic Chunking and Raptor for Retrieval can yield promising results","Define Window Size: Choose a window size (e.g., W = 3) to divide the document into overlapping chunks of sentences,Measure Semantic Similarity: Assess the similarity between consecutive chunks using semantic similarity scores,Segment the document into meaningful chunks based on the identified criteria",
 https://www.linkedin.com/posts/sahibpreetsinghh_hey-%3F%3F%3F-%3F%3F%3F%3F-exciting-times-ahead-activity-7176023810989568000-BNXv?utm_source=share&utm_medium=member_desktop,"Hey, LL.M Fans! Exciting Times Ahead! 🚀
 
 Step into the realm where an LL.M steps up to fulfill the role of a Judge - not just any judge, but a judge for Answers crafted by fellow LL.Ms. 💼
@@ -87,7 +87,7 @@ Tagging friends and Mentors - Vetrivel PS, VASANTH P, Mahesh Deshwal, Ravi Tanwa
 
 Link to the implementation repository - https://lnkd.in/ezQcmgda
 
-It's truly an enjoyable read! 🤗🌸","LL.M,judge,answers","LL.Ms can act as judges for answers,Challenges in assessing LL.M answers include hallucinated and factually incorrect responses, repetitive loops, and incoherence,Ways to overcome hurdles include engaging multiple annotators, creating a precise prompt with judgment criteria and a scale, and providing key considerations for improvement","LL.Ms can fulfill the role of a judge for answers crafted by fellow LL.Ms,Engaging N annotators from M humans can help in assessing LL.M answers,Key considerations include aiming for improvement, providing a reference point, and including examples for comprehension"
+It's truly an enjoyable read! 🤗🌸","LL.M,judge,answers","LL.Ms can act as judges for answers,Challenges in assessing LL.M answers include hallucinated and factually incorrect responses, repetitive loops, and incoherence,Ways to overcome hurdles include engaging multiple annotators, creating a precise prompt with judgment criteria and a scale, and providing key considerations for improvement","LL.Ms can fulfill the role of a judge for answers crafted by fellow LL.Ms,Engaging N annotators from M humans can help in assessing LL.M answers,Key considerations include aiming for improvement, providing a reference point, and including examples for comprehension",
 https://www.linkedin.com/posts/sahibpreetsinghh_%3F%3F%3F%3F-is-learning-%3F%3F-%3F%3F%3F%3F%3F-%3F-activity-7173898136111841282-F8sV?utm_source=share&utm_medium=member_desktop,"𝗟𝗔𝗠𝗔, a Tree-based technique, is currently being studied in the field of machine learning. I recently worked on a RAG application and came across RAPTOR, a new advanced chunking technique, through my LinkedIn feed.
 
 Let me explain the process to you:
@@ -104,7 +104,7 @@ I have a couple of suggestions:
 
 Pic credits - Leonardo.Ai
 Tagging friends and mentors - VASANTH P, Vetrivel PS, Navdeep Singh, Navdeep Kaur, Mahesh Deshwal, Sanyam Bhutani, Basant Singh, Aman Chadha, Ravi Tanwar, Harpreet Sahota, F. Firat Gonen, PhD
-Special thanks to Pramodith B. for your post, bro!","LLM,UMAP,RAG application","Tree-based technique,Advanced chunking technique,Utilizing UMAP to reduce dimensions","Study of LAM,Working on RAG application,Discovering RAPTOR through LinkedIn feed"
+Special thanks to Pramodith B. for your post, bro!","LLM,UMAP,RAG application","Tree-based technique,Advanced chunking technique,Utilizing UMAP to reduce dimensions","Study of LAM,Working on RAG application,Discovering RAPTOR through LinkedIn feed",
 https://www.linkedin.com/posts/jobanpreet-singh-392581207_asr-whisper-speechrecognition-activity-7172803455718158336-MC-j?utm_source=share&utm_medium=member_desktop,"🎙️🔍 Exploring the Fundamentals of State-of-the-Art ASR Model: Whisper! 📝
 
 Hey LinkedIn Fam! 👋
@@ -137,7 +137,7 @@ Ever wondered about log-mel spectrograms? Let's demystify:
 💡 What's Next?
 Intrigued? Stay tuned for my next post, where we'll delve into the details of fine-tuning Whisper. Your suggestions and insights are invaluable, so please share them in the comment box below! 💬
 
-Let's keep the conversation going! 🚀 #ASR #Whisper #SpeechRecognition #AI #TechTalks","ASR,Whisper,Wav2Vec2.0","Whisper trained on 680,000 hours of labeled data,Wav2Vec2.0 underwent unsupervised training using over 1M hours of data,Log-mel spectrograms explained","Whisper model architecture is an encoder-decoder transformer,Log-mel spectrogram passed through two 1-D convolutional layers,Wav2Vec2.0 lacks a decoder mapping for speech representations"
+Let's keep the conversation going! 🚀 #ASR #Whisper #SpeechRecognition #AI #TechTalks","ASR,Whisper,Wav2Vec2.0","Whisper trained on 680,000 hours of labeled data,Wav2Vec2.0 underwent unsupervised training using over 1M hours of data,Log-mel spectrograms explained","Whisper model architecture is an encoder-decoder transformer,Log-mel spectrogram passed through two 1-D convolutional layers,Wav2Vec2.0 lacks a decoder mapping for speech representations",
 https://www.linkedin.com/posts/jobanpreet-singh-392581207_transliteration-a-hugging-face-space-by-activity-7117509460616445952-FsJf?utm_source=share&utm_medium=member_desktop,"Completed my Transliteration Project - English to Punjabi 👉  ਇੰਗਲਿਸ਼ ਟੂ ਪੰਜਾਬੀ
 
 Dear LinkedIn community,
@@ -163,7 +163,7 @@ The project's user-friendly front-end has been developed using Gradio.
 🌐 Accessibility:
 I have made this project accessible to everyone through Huggingface Spaces. You can experience it in real-time by visiting the following link:
 https://lnkd.in/dJngxES9
-#Transliteration #Huggingface #AI4BHARAT","Transliteration,English to Punjabi,LSTM units","Successful completion of Transliteration Project - English to Punjabi,Utilization of advanced encoder-decoder architecture with two LSTM units,Quality assessment using Word Accuracy metric","Completed Transliteration Project - English to Punjabi,Utilized advanced encoder-decoder architecture with two LSTM units,Quality assessment using Word Accuracy metric"
+#Transliteration #Huggingface #AI4BHARAT","Transliteration,English to Punjabi,LSTM units","Successful completion of Transliteration Project - English to Punjabi,Utilization of advanced encoder-decoder architecture with two LSTM units,Quality assessment using Word Accuracy metric","Completed Transliteration Project - English to Punjabi,Utilized advanced encoder-decoder architecture with two LSTM units,Quality assessment using Word Accuracy metric",
 https://www.linkedin.com/posts/mohamedsalama1_ai-reinforcementlearning-innovation-activity-7178792892411375616-bznm?utm_source=share&utm_medium=member_desktop,"Introducing ReFT: A Revolutionary Approach to Enhancing LLMs' Learning Efficiency 🧠 ♻
 
 A groundbreaking technique called Reinforced Fine-Tuning (ReFT) has been developed by researchers to improve the learning efficiency of Large Language Models (LLMs). Unlike traditional methods, ReFT leverages reinforcement learning to evaluate different reasoning paths, resulting in significant advancements without the need for additional training data. 🔍💡
@@ -173,7 +173,7 @@ ReFT works by initially providing LLMs with a warm-up phase using SFT (Standard 
 What makes ReFT particularly impressive is that it achieves these results without requiring any increase in training data. The focus is on smarter learning rather than relying on more data. While concerns about reward hacking are common, initial results indicate that ReFT is robust and holds great promise!
 
 For more information about this transformative approach, please visit: https://lnkd.in/d254BwaF
-#AI #ReinforcementLearning #Innovation #LLMs","ReFT,LLMs,Reinforced Fine-Tuning","ReFT is a revolutionary approach to enhancing LLMs' learning efficiency,ReFT leverages reinforcement learning to evaluate different reasoning paths,ReFT works by providing LLMs with a warm-up phase using SFT followed by on-the-fly learning","ReFT is a groundbreaking technique for improving the learning efficiency of LLMs,ReFT explores various reasoning paths and reinforces the best ones based on correctness of answers,ReFT shows substantial improvements compared to using only SFT"
+#AI #ReinforcementLearning #Innovation #LLMs","ReFT,LLMs,Reinforced Fine-Tuning","ReFT is a revolutionary approach to enhancing LLMs' learning efficiency,ReFT leverages reinforcement learning to evaluate different reasoning paths,ReFT works by providing LLMs with a warm-up phase using SFT followed by on-the-fly learning","ReFT is a groundbreaking technique for improving the learning efficiency of LLMs,ReFT explores various reasoning paths and reinforces the best ones based on correctness of answers,ReFT shows substantial improvements compared to using only SFT",
 https://www.linkedin.com/posts/bavalpreet-singh_200205202v1pdf-activity-7166186517621628928-1JLm?utm_source=share&utm_medium=member_desktop,"Google recently unveiled Gemma, an innovative series of lightweight models that utilize the same intelligent technology found in the Gemini models.
 
 Here are the key features of Gemma:
@@ -194,7 +194,7 @@ The Gemma architecture incorporates several notable enhancements compared to tra
 
 3. Improved Stability Across Layers: By implementing RMSNorm, Gemma utilizes normalization techniques to achieve better stability across its layers.
 
-And the best part? You can easily access Gemma on platforms like Huggingface, Kaggle, and VertexAI. It's readily available for you to start using!","Gemma,models,intelligent technology","Gemma available in 2B and 7B versions,Suitable for business purposes,High capacity for processing information","Gemma models utilize intelligent technology,Gemma has high capacity for processing information,Gemma 7B model outperforms others in tests"
+And the best part? You can easily access Gemma on platforms like Huggingface, Kaggle, and VertexAI. It's readily available for you to start using!","Gemma,models,intelligent technology","Gemma available in 2B and 7B versions,Suitable for business purposes,High capacity for processing information","Gemma models utilize intelligent technology,Gemma has high capacity for processing information,Gemma 7B model outperforms others in tests",
 https://www.linkedin.com/posts/vasanthengineer4949_elonmusk-grokai-xai-activity-7176584570530611200-ALUP?utm_source=share&utm_medium=member_desktop,"𝗚𝗿𝗼𝗸 - 𝟭, the most recent 𝟯𝟭𝗕 𝗽𝗮𝗿𝗮𝗺𝗲𝘁𝗲𝗿 𝗠𝗢𝗘 𝗺𝗼𝗱𝗲l developed by X and Elon Musk, has been released. It incorporates 𝟴𝟲𝗕 of active parameters, utilizing both conventional and unconventional techniques in its architecture. I have provided a comprehensive analysis of these techniques and the accompanying code in the following video.
 
 Link: https://lnkd.in/dkJv2yt3
@@ -233,7 +233,7 @@ Aladdin Persson
 Yannic Kilcher
 Umar Jamil
 
-#elonmusk #grokai #xai","Grok-1,Elon Musk,X","Model has 314B parameters with 86B active,Trained using JAX framework,Released model is raw base pretrained","Grok-1 released, developed by X and Elon Musk,Incorporates 86B of active parameters,Utilizes conventional and unconventional techniques in architecture"
+#elonmusk #grokai #xai","Grok-1,Elon Musk,X","Model has 314B parameters with 86B active,Trained using JAX framework,Released model is raw base pretrained","Grok-1 released, developed by X and Elon Musk,Incorporates 86B of active parameters,Utilizes conventional and unconventional techniques in architecture",
 https://www.linkedin.com/posts/vasanthengineer4949_wanna-know-how-to-connect-your-llms-to-csv-activity-7175860156151332864-13Me?utm_source=share&utm_medium=member_desktop,"Wanna learn how to connect your LLMs to CSV as a Database? Check out this LinkedIn post: Mixtral Database Administrator: Chat with your Database. Here's the link: https://lnkd.in/gPiZqDJy
 
 In this video, I demonstrate how to use the Groq Inference Engine to run Mixtral from Mistral AI with a Streamlit Interface. To convert a CSV file to a SQL database, I utilize pandasql, and for formatting prompts, I use LangChain.
@@ -247,7 +247,7 @@ Here are the steps:
 
 You can find the code in the attached image. For a more detailed explanation and information on my experimentation with finetuning LLMs for SQL query generation, please visit the following link: https://lnkd.in/gPiZqDJy
 
-Tagging some of my connections: Harrison Chase, Vetrivel PS, Sahibpreet Singh, Ashish Patel 🇮🇳, Arpit Singh, Anshul Saxena, PhD, SUNNY BHAVEEN CHANDRA, Manish Sharma 📊, Krish Naik","LLMs,CSV,Database","Learn how to connect LLMs to CSV as a Database,Convert CSV file to SQL database,Utilize pandasql for SQL schema conversion","Demonstration of using Groq Inference Engine with Mixtral from Mistral AI,Steps for converting CSV file to SQL schema and generating SQL query,Code available in attached image"
+Tagging some of my connections: Harrison Chase, Vetrivel PS, Sahibpreet Singh, Ashish Patel 🇮🇳, Arpit Singh, Anshul Saxena, PhD, SUNNY BHAVEEN CHANDRA, Manish Sharma 📊, Krish Naik","LLMs,CSV,Database","Learn how to connect LLMs to CSV as a Database,Convert CSV file to SQL database,Utilize pandasql for SQL schema conversion","Demonstration of using Groq Inference Engine with Mixtral from Mistral AI,Steps for converting CSV file to SQL schema and generating SQL query,Code available in attached image",
 https://www.linkedin.com/posts/vasanthengineer4949_devin-going-take-your-jobs-devin-working-activity-7175500962533396480-FMw5?utm_source=share&utm_medium=member_desktop,"After the recent announcement of Cognition's groundbreaking Devin AI, there has been a lot of discussion about whether it will replace humans or not. However, before we can answer that question, it is crucial to understand how Devin AI actually works. In the following video, I have provided a detailed explanation of Devin AI's functionality:
 
 Title: Devin Going Take your Jobs?? | Devin Working Explained
@@ -264,4 +264,4 @@ In this video, I have covered all aspects of Devin AI, addressing the following 
 
 I would love to hear your thoughts and opinions on this matter as well.
 
-Tagging some of my connections: Sahibpreet Singh, Vetrivel PS, Ashish Patel 🇮🇳, SUNNY BHAVEEN CHANDRA, Krish Naik, AbdulMajedRaja RS, Manish Sharma 📊","Devin AI,replace humans,Devin AI's functionality","Devin AI's groundbreaking technology,Understanding how Devin AI works,Detailed explanation of Devin AI's functionality","Announcement of Cognition's Devin AI,Discussion on whether Devin AI will replace humans,Comprehensive explanation of Devin AI's capabilities"
+Tagging some of my connections: Sahibpreet Singh, Vetrivel PS, Ashish Patel 🇮🇳, SUNNY BHAVEEN CHANDRA, Krish Naik, AbdulMajedRaja RS, Manish Sharma 📊","Devin AI,replace humans,Devin AI's functionality","Devin AI's groundbreaking technology,Understanding how Devin AI works,Detailed explanation of Devin AI's functionality","Announcement of Cognition's Devin AI,Discussion on whether Devin AI will replace humans,Comprehensive explanation of Devin AI's capabilities",

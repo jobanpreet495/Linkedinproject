@@ -67,7 +67,7 @@ def paraphrased_post(url):
                 {data}"""
 
     prompt2=PromptTemplate(template=template,input_variables=['data'])
-    llm=ChatOpenAI(temperature=0)
+    llm=ChatOpenAI(temperature=0,model="gpt-4-turbo-preview")
     chain2=LLMChain(llm=llm,prompt=prompt2)
 
     result2=chain2({'data':data},return_only_outputs=True)
@@ -106,7 +106,7 @@ def extract_data(post_data):
     
     prompt_template = ChatPromptTemplate.from_template(template)
     messages = prompt_template.format_messages(content=post_data, format_instructions=format_instructions)
-    llm = ChatOpenAI(temperature=0)
+    llm = ChatOpenAI(temperature=0,model="gpt-4-turbo-preview")
     response = llm(messages)
     output_dict=  output_parser.parse(response.content)
     return  output_dict
