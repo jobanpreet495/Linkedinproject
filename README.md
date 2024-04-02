@@ -7,7 +7,9 @@ Project Workflow:
 
 VideoLink:
 
-[Watch the full video here](https://drive.google.com/uc?id=1UgoUs_0I0e_2uJ8gwSa40aXkMH36Kvtd)
+[Watch Video](https://drive.google.com/file/d/1UgoUs_0I0e_2uJ8gwSa40aXkMH36Kvtd/view?usp=sharing)
+
+
 
 
 Files:
