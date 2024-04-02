@@ -7,12 +7,15 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import requests
-import streamlit as st 
+from fastapi import FastAPI,Request
 import re
 import openai
 
 
 load_dotenv()
+
+
+app = FastAPI()
 
 def is_shortened_url(url):                                  # It is checking whether it is a shorten url or regular website url 
     try:
@@ -106,76 +109,31 @@ def extract_data(post_data):
     
     prompt_template = ChatPromptTemplate.from_template(template)
     messages = prompt_template.format_messages(content=post_data, format_instructions=format_instructions)
-    llm = ChatOpenAI(temperature=0,model="gpt-4-turbo-preview")
+    llm = ChatOpenAI(temperature=0 , model="gpt-4-turbo-preview")
     response = llm(messages)
     output_dict=  output_parser.parse(response.content)
     return  output_dict
 
 
 
-
-
-def main():
-    st.title("Paraphrase LinkedIn Post")
-    
-    # Initialize SessionState dictionary
-    session_state = st.session_state
-    
-    if 'paraphrase' not in session_state:
-        session_state.paraphrase = ""
-    if 'keywords' not in session_state:
-        session_state.keywords = ""
-    if 'take_aways' not in session_state:
-        session_state.take_aways = ""
-    if 'highlights' not in session_state:
-        session_state.highlights = ""
-    
-    # User input for two numbers
-    url = st.sidebar.text_input("Enter URL:", placeholder="Enter URL here...")
-    
-    # Button to calculate sum
-    if st.sidebar.button("Submit"):
+@app.post("/paraphrase")
+async def paraphrase(request: Request):
+    try:
+        data = await request.json()
+        url = data.get("url", "")
+        
         if url:
             original_url = get_original_url(url)
-            match = re.match(r"https?://(?:www\.)?linkedin\.com/(posts|feed|pulse)/.*", original_url)  # checking domain and url page (means it should only be a post nothing else like login page or something else)
-
+            match = re.match(r"https?://(?:www\.)?linkedin\.com/(posts|feed|pulse)/.*", original_url)
+            
             if match:
-                session_state.paraphrase, session_state.keywords, session_state.take_aways, session_state.highlights = paraphrased_post(url)
-                
+                paraphrased_content, keywords, take_aways, highlights = paraphrased_post(original_url)
+                return {"Paraphrased post": paraphrased_content, "Keywords": keywords, "Take Aways": take_aways, "Highlights": highlights}
             else:
-                st.sidebar.error("Put a valid LinkedIn post url only")
-
-    paraphrase_text=st.text_area("Paraphrased post",value=session_state.paraphrase, height=400)
-    import pyperclip
-    if st.button('Copy'):
-        pyperclip.copy(paraphrase_text)
-        st.success('Text copied successfully!')
-                
-    if st.sidebar.button("Show Keywords") and session_state.keywords:
-        st.write("Keywords:")
-        for i, statement in enumerate(session_state.keywords, start=1):
-            st.write(f"{i}. {statement}")
-    
-        
-    if st.sidebar.button("Show Take Aways") and session_state.take_aways:
-        st.write("Take Aways:")
-        for i, statement in enumerate(session_state.take_aways, start=1):
-            st.write(f"{i}. {statement}")
-
-    if st.sidebar.button("Show Highlights") and session_state.highlights:
-        st.write("Highlights:")
-        for i, statement in enumerate(session_state.highlights, start=1):
-            st.write(f"{i}. {statement}")
-
-if __name__ == "__main__":
-    main()
-
-
-
-
-
-
-
-
+                return "Put a valid LinkedIn post URL only"
+        else:
+            return "Please enter a link"
+    except (openai.BadRequestError, TypeError) as e:
+        return "Put a valid LinkedIn post URL only"
 
 
