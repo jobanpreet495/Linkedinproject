@@ -116,7 +116,7 @@ def extract_data(post_data):
 
 
 def main():
-    st.title("Paraphrase LinkedIn Post")
+    st.title("LinkedIn Post Creator")
     
     # Initialize SessionState dictionary
     session_state = st.session_state
